@@ -1,0 +1,50 @@
+<div class="container-fluid border-bottom d-none d-lg-block">
+  <div class="row gx-0">
+    <div class="col-lg-4 text-center py-2">
+      <div class="d-inline-flex align-items-center">
+        <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+        <div class="text-start">
+          <h6 class="text-uppercase mb-1">Our Factory</h6>
+          <span>Muniyandi kovil street, Tirumangalam-Rajapalayam Road, T.Pudupatti, Tirumangalam, Madurai-625704</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 text-center border-start border-end py-2">
+      <div class="d-inline-flex align-items-center">
+        <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+        <div class="text-start">
+          <h6 class="text-uppercase mb-1">Email Us</h6>
+          <span>evergreen.ecoproduts1@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 text-center py-2">
+      <div class="d-inline-flex align-items-center">
+        <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+        <div class="text-start">
+          <h6 class="text-uppercase mb-1">Call Us</h6>
+          <span>+91 (790) 490-7902</span><br />
+          <span>+91 (807) 210-8672</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+  <a href="/" class="navbar-brand ms-lg-5">
+    <h1 class="m-0 text-uppercase text-dark"><img src="./assets/img/logo.png" width="60" height="60"/>Evergreen Eco Products</h1>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+      <a href="/" class="nav-item nav-link" [class.active]="route.url==='/'">Home</a>
+      <a routerLink="/about" class="nav-item nav-link" [class.active]="route.url==='/about'">About</a>
+      <a routerLink="/product" class="nav-item nav-link" [class.active]="route.url==='/product'">Product</a>
+      <a routerLink="/contact" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">Contact <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->

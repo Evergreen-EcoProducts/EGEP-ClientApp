@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+          <div class="preview-pic tab-content">
+            <div class="tab-pane" *ngFor="let obj of productDetail.productImages" [ngClass]="{'active': selectedId == obj?.id}" ><img [src]="obj.src" /></div>
+          </div>
+          <ul class="preview-thumbnail nav nav-tabs">
+            <li class="active" *ngFor="let obj of productDetail.productImages">
+              <a (click)="this.selectedId=obj?.id" data-toggle="tab"><img [src]="obj.thumbNailSrc" /></a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="details col-md-6">
+          <h3 class="product-title">men's shoes fashion</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">41 reviews</span>
+          </div>
+          <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+          <h4 class="price">current price: <span>$180</span></h4>
+          <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+          <h5 class="sizes">
+            sizes:
+            <div class="d-flex flex-row">
+              <div class="quantity-box" (click)="selectedQuantity=1" [ngClass]="{'active': selectedQuantity == 1}">
+                <span class="quantity-text" data-toggle="tooltip" title="1 Kg">1 Kg</span>
+              </div>
+              <div class="quantity-box" (click)="selectedQuantity=3"  [ngClass]="{'active': selectedQuantity == 3}">
+                <span class="quantity-text" data-toggle="tooltip" title="1 Kg">3 Kg</span>
+              </div>
+              <div class="quantity-box" (click)="selectedQuantity=5" [ngClass]="{'active': selectedQuantity == 5}">
+                <span class="quantity-text" data-toggle="tooltip" title="1 Kg" >5 Kg</span>
+              </div>
+              <div class="quantity-box" (click)="selectedQuantity=10" [ngClass]="{'active': selectedQuantity == 10}">
+                <span class="quantity-text" data-toggle="tooltip" title="1 Kg" >10 Kg</span>
+              </div>
+            </div>
+          </h5>
+          <div class="action">
+            <button class="add-to-cart btn btn-default bg-primary" type="button">Send Enquiry</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-product></app-product>

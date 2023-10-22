@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpApiService } from '../http-api.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
+  contactForm: any = {};
+  constructor(private httpApiService: HttpApiService) { }
 
   ngOnInit(): void {
   }
-
+  onContactPost() {
+    this.httpApiService.postContactInformation(this.contactForm).toPromise().then((res: any) => {
+      console.log(res);
+    });
+  }
 }

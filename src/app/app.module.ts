@@ -11,6 +11,10 @@ import { ProductComponent } from './product/product.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ContactComponent } from './contact/contact.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

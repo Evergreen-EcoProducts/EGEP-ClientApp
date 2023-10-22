@@ -21,6 +21,7 @@ export class HttpApiService {
     body.append('entry.1022473065', contactForm.message);
     body.append('entry.1661666372', contactForm.email);
     body.append('entry.470702811', contactForm.contact);
+
     body.append('entry.1872792458', contactForm.subject);
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.httpClient.post("https://docs.google.com/forms/u/0/d/e/1FAIpQLSeclvsarqDZlrXzb1ON8SVh-2EX0MirP3VFQu2lSccorKsnww/formResponse", body);

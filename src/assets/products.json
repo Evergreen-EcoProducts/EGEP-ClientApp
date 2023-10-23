@@ -1,0 +1,181 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vermi Compost",
+      "prices": [
+        {
+          "size": 1,
+          "name": "1 KG",
+          "amount": "₹140"
+        },
+        {
+          "size": 3,
+          "name": "3 KG",
+          "amount": "₹240"
+        },
+        {
+          "size": 5,
+          "name": "5 KG",
+          "amount": "₹340"
+        },
+        {
+          "size": 10,
+          "name": "10 KG",
+          "amount": "₹440"
+        },
+        {
+          "size": 25,
+          "name": "25 KG",
+          "amount": "₹540"
+        },
+        {
+          "size": 50,
+          "name": "50 KG",
+          "amount": "₹640"
+        }
+      ],
+      "description": "<b>Html Description To be added</b>",
+      "images": [
+        {
+          "id": 1,
+          "image": "./assets/img/product-1.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 2,
+          "image": "./assets/img/product-2.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 3,
+          "image": "./assets/img/product-3.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 4,
+          "image": "./assets/img/product-4.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Organic Manure",
+      "prices": [
+        {
+          "size": 1,
+          "name": "1 KG",
+          "amount": "₹140"
+        },
+        {
+          "size": 3,
+          "name": "3 KG",
+          "amount": "₹240"
+        },
+        {
+          "size": 5,
+          "name": "5 KG",
+          "amount": "₹340"
+        },
+        {
+          "size": 10,
+          "name": "10 KG",
+          "amount": "₹440"
+        },
+        {
+          "size": 25,
+          "name": "25 KG",
+          "amount": "₹540"
+        },
+        {
+          "size": 50,
+          "name": "50 KG",
+          "amount": "₹640"
+        }
+      ],
+      "description": "<b>Html Description To be added</b>",
+      "images": [
+        {
+          "id": 1,
+          "image": "./assets/img/product-1.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 2,
+          "image": "./assets/img/product-2.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 3,
+          "image": "./assets/img/product-3.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 4,
+          "image": "./assets/img/product-4.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Potting Mix",
+      "prices": [
+        {
+          "size": 1,
+          "name": "1 KG",
+          "amount": "₹140"
+        },
+        {
+          "size": 3,
+          "name": "3 KG",
+          "amount": "₹240"
+        },
+        {
+          "size": 5,
+          "name": "5 KG",
+          "amount": "₹340"
+        },
+        {
+          "size": 10,
+          "name": "10 KG",
+          "amount": "₹440"
+        },
+        {
+          "size": 25,
+          "name": "25 KG",
+          "amount": "₹540"
+        },
+        {
+          "size": 50,
+          "name": "50 KG",
+          "amount": "₹640"
+        }
+      ],
+      "description": "<b>Html Description To be added</b>",
+      "images": [
+        {
+          "id": 1,
+          "image": "./assets/img/product-1.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 2,
+          "image": "./assets/img/product-2.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 3,
+          "image": "./assets/img/product-3.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        },
+        {
+          "id": 4,
+          "image": "./assets/img/product-4.png",
+          "thumbnail": "http://placekitten.com/200/126"
+        }
+      ]
+    }
+  ]
+}

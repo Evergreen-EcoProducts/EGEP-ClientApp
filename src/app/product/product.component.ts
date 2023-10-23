@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { HttpApiService } from '../http-api.service';
 declare var jQuery: any;
 @Component({
   selector: 'app-product',
@@ -7,12 +9,16 @@ declare var jQuery: any;
 })
 export class ProductComponent implements OnInit {
   Images = ['assets/img/product-1.png', 'assets/img/product-2.png', 'assets/img/product-3.png'];
-
+  products: any;
   SlideOptions = { items: 1, dots: true, nav: true };
-  CarouselOptions = { items: 3, dots: true, nav: true };  
-  constructor() { }
+  CarouselOptions = { items: 3, dots: true, nav: true, navText: ['<i class="bi bi-arrow-left-circle"></i>', '<i class="bi bi-arrow-right-circle"></i>'] };
+  
+  constructor(private httpApiService: HttpApiService, private router: Router) {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    await this.getProducts();
   }
   ngAfterViewInit() {
     (function ($) {
@@ -45,5 +51,20 @@ export class ProductComponent implements OnInit {
         });
       });
     })(jQuery);
+  }
+  async getProducts() {
+    await this.httpApiService.getProducts().toPromise().then((res: any[] | undefined) => {
+      if (res) {
+        this.products = res;
+      }
+    });
+  }
+  onProductDetail(id:any) {
+    this.router.navigate(['product-detail/' + id]);
+    window.scroll({
+      top: 700,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 }

@@ -5,63 +5,93 @@
       <h6 class="text-primary text-uppercase">Products</h6>
       <h1 class="display-5 text-uppercase mb-0">Products For Your Best Plants</h1>
     </div>
-    <div class="owl-carousel product-carousel">
-      <div class="pb-5">
+    <!--<div class="owl-carousel product-carousel">
+    <div class="owl-item" style="width: 290.25px; margin-right: 45px;" *ngFor="let product of products?.products">
+      <div class="pb-5" >
         <div class="product-item position-relative bg-light d-flex flex-column text-center">
-          <img class="img-fluid mb-4" src="assets/img/product-1.png" alt="">
-          <h6 class="text-uppercase">Vermi compost</h6>
-          <h5 class="text-primary mb-0">$199.00</h5>
-          <div class="btn-action d-flex justify-content-center">
-            <!--<a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>-->
-            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="pb-5">
-        <div class="product-item position-relative bg-light d-flex flex-column text-center">
-          <img class="img-fluid mb-4" src="assets/img/product-2.png" alt="">
-          <h6 class="text-uppercase">Potting mix</h6>
-          <h5 class="text-primary mb-0">$199.00</h5>
-          <div class="btn-action d-flex justify-content-center">
-            <!--<a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>-->
-            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="pb-5">
-        <div class="product-item position-relative bg-light d-flex flex-column text-center">
-          <img class="img-fluid mb-4" src="assets/img/product-3.png" alt="">
-          <h6 class="text-uppercase">Cow dung manure</h6>
-          <h5 class="text-primary mb-0">$199.00</h5>
-          <div class="btn-action d-flex justify-content-center">
-            <!--<a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>-->
-            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="pb-5">
-        <div class="product-item position-relative bg-light d-flex flex-column text-center">
-          <img class="img-fluid mb-4" src="assets/img/product-4.png" alt="">
-          <h6 class="text-uppercase">Organic Manure</h6>
-          <h5 class="text-primary mb-0">$199.00</h5>
-          <div class="btn-action d-flex justify-content-center">
-            <!--<a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>-->
-            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="pb-5">
-        <div class="product-item position-relative bg-light d-flex flex-column text-center">
-          <img class="img-fluid mb-4" src="assets/img/product-2.png" alt="">
-          <h6 class="text-uppercase">Farm-yard Mannure</h6>
-          <h5 class="text-primary mb-0">$199.00</h5>
-          <div class="btn-action d-flex justify-content-center">
-            <!--<a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>-->
-            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
-          </div>
+          <img class="img-fluid mb-4" src="{{product.images[0]}}" alt="">
+          <h6 class="text-uppercase">{{product.name}}</h6>
+    <h5 class="text-primary mb-0">$199.00</h5>
+    <div class="btn-action d-flex justify-content-center">
+    <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+    <a class="btn btn-primary py-2 px-3" href="" (click)="onProductDetail(product.id)"><i class="bi bi-eye"></i></a>
         </div>
       </div>
     </div>
+    </div>
+  </div>-->
+    <!--<div class="owl-carousel product-carousel">
+    <div class="pb-5">
+      <div class="product-item position-relative bg-light d-flex flex-column text-center">
+        <img class="img-fluid mb-4" src="assets/img/product-1.png" alt="">
+        <h6 class="text-uppercase">Vermi compost</h6>
+        <h5 class="text-primary mb-0">$199.00</h5>
+        <div class="btn-action d-flex justify-content-center">
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5">
+      <div class="product-item position-relative bg-light d-flex flex-column text-center">
+        <img class="img-fluid mb-4" src="assets/img/product-2.png" alt="">
+        <h6 class="text-uppercase">Potting mix</h6>
+        <h5 class="text-primary mb-0">$199.00</h5>
+        <div class="btn-action d-flex justify-content-center">
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5">
+      <div class="product-item position-relative bg-light d-flex flex-column text-center">
+        <img class="img-fluid mb-4" src="assets/img/product-3.png" alt="">
+        <h6 class="text-uppercase">Cow dung manure</h6>
+        <h5 class="text-primary mb-0">$199.00</h5>
+        <div class="btn-action d-flex justify-content-center">
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5">
+      <div class="product-item position-relative bg-light d-flex flex-column text-center">
+        <img class="img-fluid mb-4" src="assets/img/product-4.png" alt="">
+        <h6 class="text-uppercase">Organic Manure</h6>
+        <h5 class="text-primary mb-0">$199.00</h5>
+        <div class="btn-action d-flex justify-content-center">
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5">
+      <div class="product-item position-relative bg-light d-flex flex-column text-center">
+        <img class="img-fluid mb-4" src="assets/img/product-2.png" alt="">
+        <h6 class="text-uppercase">Farm-yard Mannure</h6>
+        <h5 class="text-primary mb-0">$199.00</h5>
+        <div class="btn-action d-flex justify-content-center">
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+          <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <owl-carousel-o [options]="CarouselOptions">
+    <ng-template carouselSlide  *ngFor="let product of products?.products">
+      <div class="pb-5">
+        <div class="product-item position-relative bg-light d-flex flex-column text-center">
+          <img class="img-fluid mb-4" src="{{product.images[0].image}}" alt="">
+          <h6 class="text-uppercase">{{product.name}}</h6>
+          <!--<h5 class="text-primary mb-0">$199.00</h5>-->
+          <div class="btn-action d-flex justify-content-center">
+            <!--<a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>-->
+            <a class="btn btn-primary py-2 px-3" (click)="onProductDetail(product.id)"><i class="bi bi-eye"></i></a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
   </div>
 </div>
 <!-- Products End -->
